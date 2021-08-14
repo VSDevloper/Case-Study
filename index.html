@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <title>MobileNet and Wolfram</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <ol>
+            <center>
+                <div class="col-xs-12 header_div">
+                    <h2>Wolfram vs MobileNet</h2>
+                </div>
+
+                <div class="col-sm-6 col-xs-12 main_div">
+                    <li id="list">
+                        <b><u>Water Bottle</u></b>
+                        <img src="water bottle.jpeg" class="normal_img">
+                    </li>
+                    
+                    <h4>Wolfram:
+                        <span id="wolfram"> Vial</span>
+                    </h4>
+
+                    <h4>MobileNet:
+                        <span id="MobileNet"> Water bottle</span>
+                    </h4>
+
+                    <div class="result">
+                        <h4>Result:</h4>
+                        <hr>
+                        <h4>MobileNet is correct</h4>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-xs-12 main_div">
+                    <li id="list">
+                        <b><u>boots</u></b>
+                        <img src="boots.jpg" class="normal_img">
+                    </li>
+                    
+                    <h4>Wolfram:
+                        <span id="wolfram"> Bulcher</span>
+                    </h4>
+
+                    <h4>MobileNet:
+                        <span id="MobileNet"> Boot</span>
+                    </h4>
+
+                    <div class="result">
+                        <h4>Result:</h4>
+                        <hr>
+                        <h4>MobileNet is correct</h4>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-xs-12 main_div">
+                    <li id="list">
+                        <b><u>Laptop</u></b>
+                        <img src = "laptop.jpg" class="special_img">
+                    </li>
+                    
+                    <h4>Wolfram:
+                        <span id="wolfram"> Flat Panel Display</span>
+                    </h4>
+
+                    <h4>MobileNet:
+                        <span id="MobileNet"> Laptop</span>
+                    </h4>
+
+                    <div class="result">
+                        <h4>Result:</h4>
+                        <hr>
+                        <h4>MobileNet is correct</h4>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-xs-12 main_div">
+                    <li id="list">
+                        <b><u>XBox Series X</u></b>
+                        <img src="xbox series x.jpg" class="special_img">
+                    </li>
+                    
+                    <h4>Wolfram:
+                        <span id="wolfram"> Nintendo Switch</span>
+                    </h4>
+
+                    <h4>MobileNet:
+                        <span id="MobileNet"> Strainer</span>
+                    </h4>
+
+                    <div class="result">
+                        <h4>Result:</h4>
+                        <hr>
+                        <h4>Both of them are wrong</h4>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-xs-12 main_div">
+                    <li id="list">
+                        <b><u>Ruler</u></b>
+                        <img src="scale.jpg" class="normal_img">
+                    </li>
+                    
+                    <h4>Wolfram:
+                        <span id="wolfram"> Ruler</span>
+                    </h4>
+
+                    <h4>MobileNet:
+                        <span id="MobileNet"> Ruler</span>
+                    </h4>
+
+                    <div class="result">
+                        <h4>Result:</h4>
+                        <hr>
+                        <h4>Both are the same</h4>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="col-sm-12 col-xs-12" id="final_result">
+                    <label><b><u>Wolfram identified 1/5 objects correctly and MobileNet identified 4/5 objects correctly. It's obvious that MobileNet won.</u></b></label>
+                </div>
+            </center>
+        </ol>
+    </body>
+    <script src="main.js"></script>
+</html>
